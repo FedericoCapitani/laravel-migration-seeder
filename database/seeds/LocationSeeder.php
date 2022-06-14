@@ -1,6 +1,6 @@
 <?php
 
-use App\Models\Locations;
+use App\Models\Location;
 use Illuminate\Database\Seeder;
 
 class LocationSeeder extends Seeder
