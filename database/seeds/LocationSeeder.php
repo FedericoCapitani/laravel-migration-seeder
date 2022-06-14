@@ -16,7 +16,7 @@ class LocationSeeder extends Seeder
             [
                 'name' => 'Hotel Mediterraneo',
                 'country' => 'Italy',
-                'price' => 25000,
+                'price' => 90,
                 'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis suscipit tempore qui ullam deleniti voluptate excepturi harum saepe, tenetur maxime.',
                 'thumbnail' => 'https://picsum.photos/300',
                 'address' => 'Via Leonardo da Vinci 11',
@@ -26,7 +26,7 @@ class LocationSeeder extends Seeder
             [
                 'name' => 'Museo della storia navale',
                 'country' => 'Italy',
-                'price' => 25000,
+                'price' => 10,
                 'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis suscipit tempore qui ullam deleniti voluptate excepturi harum saepe, tenetur maxime.',
                 'thumbnail' => 'https://picsum.photos/300',
                 'address' => 'Via Alessandro Manzoni 7',
@@ -36,7 +36,7 @@ class LocationSeeder extends Seeder
             [
                 'name' => 'Acropoli di Agrigento',
                 'country' => 'Italy',
-                'price' => 25000,
+                'price' => 15,
                 'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis suscipit tempore qui ullam deleniti voluptate excepturi harum saepe, tenetur maxime.',
                 'thumbnail' => 'https://picsum.photos/300',
                 'address' => 'Via Gorizia 42',
@@ -46,7 +46,7 @@ class LocationSeeder extends Seeder
             [
                 'name' => 'Anfiteatro Greco di Siracusa',
                 'country' => 'Italy',
-                'price' => 25000,
+                'price' => 20,
                 'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis suscipit tempore qui ullam deleniti voluptate excepturi harum saepe, tenetur maxime.',
                 'thumbnail' => 'https://picsum.photos/300',
                 'address' => 'Viale Marco Polo 37',
@@ -56,7 +56,7 @@ class LocationSeeder extends Seeder
             [
                 'name' => 'Museo di Storia Naturale di Pisa',
                 'country' => 'Italy',
-                'price' => 25000,
+                'price' => 14,
                 'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis suscipit tempore qui ullam deleniti voluptate excepturi harum saepe, tenetur maxime.',
                 'thumbnail' => 'https://picsum.photos/300',
                 'address' => 'Via Garibaldi 2',
@@ -66,7 +66,7 @@ class LocationSeeder extends Seeder
             [
                 'name' => 'Hotel Quadrifoglio',
                 'country' => 'Italy',
-                'price' => 25000,
+                'price' => 100,
                 'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis suscipit tempore qui ullam deleniti voluptate excepturi harum saepe, tenetur maxime.',
                 'thumbnail' => 'https://picsum.photos/300',
                 'address' => 'Via Milano 27',
@@ -85,6 +85,7 @@ class LocationSeeder extends Seeder
             $_location->address = $location['address'];
             $_location->is_available = $location['is_available'];
             $_location->phone_number = $location['phone_number'];
+            $_location->save();
         }
     }
 }
