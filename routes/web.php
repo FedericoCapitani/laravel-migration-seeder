@@ -13,10 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-})->name('home');
-
-Route::get('location', function() {
-    return view('locations');
-})->name('locations');
+Route::get('/', 'LocationController@index')->name('home');
+Route::get('location', 'LocationController@showLocations')->name('locations');
