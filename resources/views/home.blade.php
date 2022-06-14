@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-<p>prova home</p>
-<a href="{{route('locations')}}">locations</a>
+<h1 class="text-center">Homepage</h1>
+<nav class="d-flex justify-content-center">
+    <a href="{{route('locations')}}">Locations</a>
+</nav>
 @endsection
