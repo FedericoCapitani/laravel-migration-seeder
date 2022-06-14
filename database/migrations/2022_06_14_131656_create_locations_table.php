@@ -15,6 +15,14 @@ class CreateLocationsTable extends Migration
     {
         Schema::create('locations', function (Blueprint $table) {
             $table->id();
+            $table->string('name')->nullable();
+            $table->string('country');
+            $table->decimal('price', 8, 2, true);
+            $table->string('description', 255)->nullable();
+            $table->string('thumbnail');
+            $table->string('address')->nullable();
+            $table->boolean('is_available')->default(1);
+            $table->string('phone_number')->nullable();
             $table->timestamps();
         });
     }
