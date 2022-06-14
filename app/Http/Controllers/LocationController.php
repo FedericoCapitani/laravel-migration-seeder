@@ -19,7 +19,8 @@ class LocationController extends Controller
 
     public function showLocations()
     {
-        return view('locations');
+        $locations = Location::all();
+        return view('locations', compact('locations'));
     }
 
     /**
